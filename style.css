@@ -1,0 +1,452 @@
+* {
+  box-sizing: border-box;
+  font-family: "Anonymous Pro", monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: white;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+/* Дизайнеры вообще не думают о разработчиках, накалякает дизайн, а как его делать непонятно */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+  background-color: rgb(22, 61, 92);
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header-logo {
+}
+
+.header-logo-title,
+.header-logo-subtitle {
+  color: white;
+}
+
+.header-logo-title {
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.header-logo-subtitle {
+}
+
+/* Нужно купить:
+    - кефир
+    - батон
+    - шоколадку с сыром
+    - яблок и огурцов на салат
+    - сметану
+ */
+
+.order-button {
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  background-color: brown;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  transform: scale(4, 4);
+}
+
+.header-menu {
+  position: relative;
+  left: 130px;
+}
+
+.header-menu-link {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  border: 1px solid white;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.header-menu-link:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(22, 61, 92);
+}
+
+.visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 460px;
+  background-color: black;
+  background-image: url("images/bg4.jpg");
+  background-size: 200px 200px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.visual-text {
+  max-width: 990px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  color: rgb(22, 61, 92);
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+h1 {
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+p {
+  margin: 0 0 15px;
+}
+
+/* about */
+
+.about {
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+.about-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-text,
+.about-photo {
+  flex: 0 0 47%;
+}
+
+.about-text {
+  font-size: 20px;
+}
+
+.about-more {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px dotted rgb(22, 61, 92);
+  color: rgb(22, 61, 92);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.about-more:hover {
+  border-bottom: 1px dotted transparent;
+}
+
+.about-hidden {
+  display: none;
+}
+
+.about-photo img {
+  border-radius: 10px 10px 1000px 10px;
+  border: 10px solid rgb(255, 103, 128);
+}
+
+/* job and portfolio */
+
+.jobs {
+  padding: 50px;
+}
+
+.jobs h1 {
+  text-align: center;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-item {
+  flex: 0 0 32%;
+  margin: 0 0 25px;
+}
+
+.portfolio-item img {
+  opacity: 0.3;
+}
+
+.portfolio-item-text {
+  padding: 5px;
+  font-size: 18px;
+  color: #666;
+}
+
+.reviews {
+  padding: 50px;
+  background-color: rgb(22, 61, 92);
+}
+
+.reviews h1 {
+  color: white;
+  text-align: center;
+}
+
+/* swiper */
+
+.swiper-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  padding: 30px 100px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.apo {
+  width: 60px;
+  margin: 0 auto 20px;
+}
+
+.juio47d7aghd2 {
+  display: flex;
+  max-width: 800px;
+  margin: 30px auto;
+  border: 1px solid #ccc;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.juio47d7aghd2:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.a0998aha,
+.mugs3asdf3a {
+  flex: 0 0 260px;
+  background-image: url("images/haujadu344e.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.mugs3asdf3a {
+  background-image: url("images/liao38ja3.jpg");
+}
+
+.li4rm8aha {
+  flex: 1 1 auto;
+  padding: 30px;
+  background-color: white;
+}
+
+.li4rm8aha h3 {
+  color: blue;
+  font-size: 22px;
+  margin: 0;
+}
+
+.li4rm8aha p {
+  color: #333;
+  font-size: 18px;
+  margin: 0;
+}
+
+.prices {
+  padding: 50px;
+}
+
+.prices h1,
+.prices p {
+  text-align: center;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 40px;
+}
+
+.price {
+  flex: 0 0 32%;
+  border: 1px solid #ccc;
+  background-color: white;
+  border-radius: 5px;
+  padding: 30px;
+  text-align: center;
+}
+
+.price-icon {
+  max-width: 90px;
+  margin: 0 auto 10px;
+}
+
+.price-desс {
+  color: #666;
+  font-size: 22px;
+  margin: 0 0 10px;
+}
+
+.price-value {
+  color: rgb(22, 61, 92);
+  font-size: 28px;
+  font-family: "Rubik Mono One", sans-serif;
+}
+
+.contacts {
+  padding: 50px;
+  background-color: #f2f2f2;
+}
+
+.contacts h1 {
+  text-align: center;
+}
+
+.contacts-row {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contacts-text {
+  margin: 0 0 50px;
+}
+
+.contacts-text h2 {
+}
+
+.contacts-social {
+}
+
+.social-link {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 10px 0 10px 60px;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  color: rgb(22, 61, 92);
+  font-size: 28px;
+  text-decoration: underline;
+}
+
+.vk {
+  background-image: url("images/instagram.svg");
+}
+.instagram {
+  background-image: url("images/vk.svg");
+}
+
+.footer {
+  background-color: #111;
+  padding: 50px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* modal */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+}
+
+.order-modal {
+  position: relative;
+  top: 200px;
+  left: 200px;
+  flex: 0 0 600px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  transform: scale(0.3, 0.3);
+}
+
+.hidden {
+  display: none;
+}
+
+.order-modal-close {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.close-button {
+  display: block;
+  border: none;
+  padding: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: brown;
+  background-image: url("images/close.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 16px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.close-button:hover {
+  transform: rotate(720deg);
+}
+
+.form-group {
+  margin: 0 0 10px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+.submit {
+  display: inline-block;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  background-color: brown;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
